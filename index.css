@@ -1,0 +1,125 @@
+html {
+  width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: pink;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a { color: inherit; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 4px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.offer-container {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.subheader {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.full-width-img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.seats-img {
+  width: 50%;
+}
+
+.tour-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.seats-container {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 7rem;
+  }
+
+  .full-width-img {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .seats-img {
+    padding: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.blink-me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
